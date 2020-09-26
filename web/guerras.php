@@ -128,9 +128,9 @@
 							echo "<p>Las estadisticas de guerra de este clan no son publicas</p>";
 							break;
 						default:
-							switch ($errormsg) {
-								case 'true':
-									$error = $errormsg;
+							// switch ($errormsg) {
+								// case 'true':
+									//$error = $errormsg;
 									echo "<h1 style='text-decoration:none;
 											animation-name: parpadeo;
 									 		animation-duration: 1s;
@@ -140,7 +140,10 @@
 											-webkit-animation-duration: 1s;
 											-webkit-animation-timing-function: linear;
 											-webkit-animation-iteration-count: infinite;'>" . $datog["clan"]["name"] . "</h1>";
-							}
+										// break;
+								// default:
+									// break;
+							// }
 					}
 				}
 
