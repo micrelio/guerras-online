@@ -73,7 +73,6 @@ function guerras($clan)
 		// echo '<pre>';
 		// print_r($datog);
 		// echo '</pre>'; 
-
 		return $datog;
 	}
 } //isset clan

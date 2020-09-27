@@ -20,7 +20,6 @@
 	<meta name="robots" content="index,follow">
 	<meta property="og:url" content="https://micrelio.esy.es/">
 	<meta property="og:site_name" content="Guerras online | Clash of Clans">
-
 	<?php include('../funciones/funciones.php'); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="../funciones/funciones.js"></script>
