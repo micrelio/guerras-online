@@ -20,7 +20,6 @@
 	<meta name="robots" content="index,follow">
 	<meta property="og:url" content="https://micrelio.esy.es/">
 	<meta property="og:site_name" content="Guerras online | Clash of Clans">
-
 	<?php include('../funciones/funciones.php'); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src="../funciones/funciones.js"></script>
@@ -39,7 +38,6 @@
 			});
 		});
 	</script>
-
 	<title><?php // echo $dato["name"]; 
 			?></title>
 </head>
@@ -94,7 +92,6 @@
 				if (!isset($error)) {
 					echo "<div id='guerrae'>
 					<div class='top'>";
-
 					$datot = (top());
 					$clanes = $datot['items'];
 					echo "<table >
@@ -110,16 +107,6 @@
 					echo "</table>		
 					</div>
 				</div>";
-				}
-				?>
-				<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
-
-				<?php
-				if (isset($datog["clan"]["members"])) {
-					$mienbrospk = $datog["clan"]["members"];
-				}
-				if (isset($datog["opponent"]["members"])) {
-					$mienbrospk2 = $datog["opponent"]["members"];
 				}
 				?>
 				<div id="guerrae">
@@ -177,6 +164,14 @@
 					}
 					?>
 				</div>
+				<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
+				<?php if (isset($datog["clan"]["members"])) {
+					$mienbrospk = $datog["clan"]["members"];
+				}
+				if (isset($datog["opponent"]["members"])) {
+					$mienbrospk2 = $datog["opponent"]["members"];
+				}
+				?>
 				<div id="guerrae">
 					<div class="wari">
 						<!--style="font-family:Arial, Helvetica, sans-serif; font-size:17px;"-->
@@ -629,7 +624,6 @@
 																				} else {
 																					echo  '<img src="../images/iconos/' . $star . '.png" ; />';
 																				}
-
 																				if (isset($mienbropk2["mapPosition"])) {
 																					echo  "</br>" . $mienbropk2["mapPosition"];
 																				} ?>.<?php if (isset($mienbropk2["name"])) {
