@@ -1,39 +1,27 @@
 @charset "utf-8";
-@font-face 
-	{
-    font-family: supercell;
-    src:url(..//fuentes/supercell-magic-webfont.ttf) format('truetype');}
-
-
-
-
-
-
-
-
-  	/*===================================*\
+@font-face {
+  font-family: supercell;
+  src: url(..//fuentes/supercell-magic-webfont.ttf) format("truetype");
+}
+/*===================================*\
 	       	   Navigation Bar
   	\*===================================*/
-
 /* Clearfix */
-.clear:before, .clear:after {
-    content: " ";
-    display: table;
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
 }
-
-.clear:after {margin: 0 auto;
-    clear: both;
+.clear:after {
+  margin: 0 auto;
+  clear: both;
 }
-
 .clear {
-    *zoom: 1;
+  *zoom: 1;
 }
-
 a#pull {
-    display: none;
+  display: none;
 }
-
-
 /*nav ul 
 			{
 				width:100%;
@@ -45,12 +33,10 @@ a#pull {
 				{
 					text-align:center;
 					float:left;
-					
-				}
+			}
 					 nav li a 
 					{
-						
-						color:brown;
+					color:brown;
 						text-decoration:none;
 						display:block;
 						height:34px; 
@@ -68,8 +54,7 @@ a#pull {
 							background:white url('../images/images/imagenes/nav_over.jpg') top center no-repeat;
 							color:white;
 								}
-								
-			 nav .des li ul {
+									 nav .des li ul {
 				display:none;
 				position:absolute;
 				min-width:140px;
@@ -90,154 +75,127 @@ a#pull {
 				right:-140px;
 				top:0px;
 						}*/
-						
-					
-								
-			
-		
 nav {
-    height: 48px;
-    width: 100%;
-    background: orange url('../images/imagenes/navegacion.jpg') no-repeat;
-   overflow:hidden;
-   background-size:100%;
+  height: 48px;
+  width: 100%;
+  background: orange url("../images/imagenes/navegacion.jpg") no-repeat;
+  overflow: hidden;
+  background-size: 100%;
 }
-
-
-
 nav ul {
-    padding: 0;
-    margin: 0 auto;
-    height: 50px; width: 100%; /*para encojer menu*/
-	
+  padding: 0;
+  margin: 0 auto;
+  height: 50px;
+  width: 100%; /*para encojer menu*/
 }
-
-nav li { width:120px;/*tamaño celdas menu*/
-    display: inline;
-    float: left; 
-
+nav li {
+  /* width: 120px; tamaï¿½o celdas menu */
+  display: inline;
+  /* float: left;  */
 }
-
-nav a {margin-left: 5px; margin-right: 5px;
-    color: brown;
-    display: inline-block;
-   
-    width: 100%;
-    text-align: center;
-	
-    line-height: 40px;
+nav a {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: brown;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
 }
-
 nav li a {
-	text-decoration:none;
-    border-right: 1px solid brown;
+  text-decoration: none;
+  border-right: 1px solid brown;
 }
-
 nav li:last-child a {
-    border-right: 0;
+  border-right: 0;
 }
-
-nav a:hover, nav a:active {background: url('../images/imagenes/nav_over.jpg') no-repeat;
-   color: white; white; height: 50px; background-size:100%;
+nav a:hover,
+nav a:active {
+  background: url("../images/imagenes/nav_over.jpg") no-repeat;
+  color: white;
+  height: 50px;
+  background-size: 100%;
 }
-    
-     nav .active 
-	 {
-				background: url('../images/imagenes/nav_over.jpg') top center no-repeat;
-				color:white;
-         height: 50px;
-		 }
-@media only screen and (max-width : 1000px) {
-    nav 
-		{font-size:24px;
-		height:100px;
-		background: orange /*#666*/ ;
-        border-bottom: 0;
-        height: auto;
-		}
-
-    nav ul
-		{
-        display: none;
-        height: auto;
-        width: 100%;
-		}
-
-    nav li 
-		{
-        width: 50%;
-        float: left;
-        position: relative; border-bottom: 1px solid brown;
-		}
-
-    nav a 
-		{
-
-		margin:0 auto;
-		-webkit-text-stroke: 0.5px black;
-        text-align: left;
-        width: 100%;
-        text-indent: 25px; 
-		text-decoration:none;
-		}
-    
-    nav a:hover, nav a:active
-		{
-		background: url('../images/imagenes/navegacion.jpg') top center no-repeat;
-		background-color: #333; 
-		height: 40px; 
-		width: 100%;
-		}
-   
-   nav .active 
-		{background-size: cover; 
-		background: url('../images/imagenes/navegacion.jpg') top center no-repeat;
-		color:white;
-        height: 40px; width:100%; }
-
-    nav a#pull 
-		{ 
-        display: block;
-        background-color:  gold/*#666*/;
-        width: 100%;
-        position: relative;
-		}
-
-    nav a#pull:after 
-		{
-        content:""; 
-        background: url('../images/imagenes/nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px; 
-		}
-    }
-
+nav .active {
+  background: url("../images/imagenes/nav_over.jpg") top center no-repeat;
+  color: white;
+  height: 50px;
+}
+@media only screen and (max-width: 1000px) {
+  nav {
+    font-size: 24px;
+    height: 100px;
+    background: orange /*#666*/;
+    border-bottom: 0;
+    height: auto;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+    width: 100%;
+  }
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+    border-bottom: 1px solid brown;
+  }
+  nav a {
+    margin: 0 auto;
+    -webkit-text-stroke: 0.5px black;
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    text-decoration: none;
+  }
+  nav a:hover,
+  nav a:active {
+    background: url("../images/imagenes/navegacion.jpg") top center no-repeat;
+    background-color: #333;
+    height: 40px;
+    width: 100%;
+  }
+  nav .active {
+    background-size: cover;
+    background: url("../images/imagenes/navegacion.jpg") top center no-repeat;
+    color: white;
+    height: 40px;
+    width: 100%;
+  }
+  nav a#pull {
+    display: block;
+    background-color: gold /*#666*/;
+    width: 100%;
+    position: relative;
+  }
+  nav a#pull:after {
+    content: "";
+    background: url("../images/imagenes/nav-icon.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
 /*==========================*\
 	body
 \*==========================*/
-
 body {
-	color:#FFFFFF; /* letras de abajo */
-	margin:0;
-	padding:0;
-	background:orange url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed;
- 
-	background-size: cover;
-	font-family: 'supercell', Arial, Verdana, Helvetica, sans-serif;
-	font-size:12px;
-	}
-
-#contenedor
-	{
-    width:1024px;
-	margin:0 auto;
-	
-	}
-
+  color: #ffffff; /* letras de abajo */
+  margin: 0;
+  padding: 0;
+  background: orange url("../images/imagenes/fondoguerra.gif") no-repeat top
+    fixed;
+  background-size: cover;
+  font-family: "supercell", Arial, Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#contenedor {
+  width: 1024px;
+  margin: 0 auto;
+}
 /*.banner 
 	{
 	width:1024px;
@@ -249,194 +207,160 @@ body {
 	width:1024px;
 	}
 */
-
-#contenedor2
-	{
-	width:1024px;
-	margin:0 auto;
-	}
-	
-#main2
-	{
-     border-width: 3px; border-style: solid; border-color: orange;   
-	/*display:inline-block;*/ 
-	width:1018px;
-	margin:0 auto;
-	/*overflow: hidden;*/
-	clear: both;
-	/*padding:5px;*/
-	}	
-	
-#main2 .centro2
-	{
-	/*flex-direction: row;*/
-	margin: 0 auto;
-	background: url('../images/imagenes/marcocentral.png') repeat-y center center; /*fondo cajon central *//*#a9d6ff*/
-	background-color:;
-	background-size:100%;
-	padding: 0px;
-	
-	}
-	.centro2 img	
-	{
-	height: auto;	
-	width:100%;
-	background-color:;
-	}
-	
-
-.centro2 h 
-	{
-	-webkit-text-stroke: 1.5px black;
-	text-shadow: 0 1px 0 #ccc, 
-    0 2px 0 #c9c9c9,
-	0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-	0 6px 1px rgba(0,0,0,.1),
-    0 0 5px rgba(0,0,0,.1),
-    0 1px 3px rgba(0,0,0,.3),
-    0 3px 5px rgba(0,0,0,.2),
-    0 5px 10px rgba(0,0,0,.25),
-    0 10px 10px rgba(0,0,0,.2),
-    0 20px 20px rgba(0,0,0,.15);
-	color: #FFF;
-	width:40%;
-	background: url('../images/imagenes/') center center no-repeat; /* color titulos dentro cajones centrales */
-	margin-left:30px;
-	margin-right:25px;
-	color:orange;   /*color letras h3 */
-	font-size:25px;
-	padding:3px 0;
-	text-indent:10px;
-	}	
-.centro2 h1 
-				{
-				-webkit-text-stroke: 1.5px black;
-				text-shadow: 0 1px 0 #ccc, 
-          
-
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-			  color: #FFF;
-				width:;
-				background:url('../images/imagenes/') center center no-repeat; /* color titulos dentro cajones centrales */
-				margin-left:30px;
-				margin-right:25px;
-				color:orange;   /*color letras h3 */
-				font-size:32px;
-				padding:3px 0;
-				text-indent:10px;
-
-	}
-
-
-	/*===================================*\
+#contenedor2 {
+  width: 1024px;
+  margin: 0 auto;
+}
+#main2 {
+  border-width: 3px;
+  border-style: solid;
+  border-color: orange;
+  /*display:inline-block;*/
+  width: 1018px;
+  margin: 0 auto;
+  /*overflow: hidden;*/
+  clear: both;
+  /*padding:5px;*/
+}
+#main2 .centro2 {
+  /*flex-direction: row;*/
+  margin: 0 auto;
+  background: url("../images/imagenes/marcocentral.png") repeat-y center center; /*fondo cajon central */ /*#a9d6ff*/
+  background-size: 100%;
+  padding: 0px;
+}
+.centro2 img {
+  height: auto;
+  width: 100%;
+}
+.centro2 h {
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 40%;
+  background: url("../images/imagenes/") center center no-repeat; /* color titulos dentro cajones centrales */
+  margin-left: 30px;
+  margin-right: 25px;
+  color: orange; /*color letras h3 */
+  font-size: 25px;
+  padding: 3px 0;
+  text-indent: 10px;
+}
+.centro2 h1 {
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  background: url("../images/imagenes/") center center no-repeat; /* color titulos dentro cajones centrales */
+  margin-left: 30px;
+  margin-right: 25px;
+  color: orange; /*color letras h3 */
+  font-size: 32px;
+  padding: 3px 0;
+  text-indent: 10px;
+}
+/*===================================*\
 				pie
 	\*===================================*/
- #pie
-	{width:100%;
-	padding:21px;
-	overflow:hidden; 
-	font-size:17px; 
-	font-family:Arial, Helvetica, sans-serif; 
-	background: gold url('../images/imagenes/')  no-repeat center center ;
-	
-    	
-	margin:0 auto;
-
-	
-	
-	}
-	#pie p
-	{ font-size:17px; 
-	font-family:Arial, Helvetica, sans-serif; 
-	color:black;
-	
-	}
-	#pie img{ -moz-background-size: cover;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-	 width:100%;
-	margin:0 auto; 
-	}
-#pie a, #pie a:link,  #pie a:visited 
-	{
-	/*color:#FFFFFF;*/
-	}
-#pie a:hover 
-	{ 
-	text-decoration:none;
-	}
-		
-#contenedor #pie #diseño
-	{font-family:Arial, Helvetica, sans-serif; 
-	-webkit-text-stroke: 1.5px white;
-	font-size:17px;
-	float:left;
-	margin:30px 0 0 20px;
-	}
-
-#contenedor #pie #copyright 
-	{font-family:Arial, Helvetica, sans-serif; 
-	-webkit-text-stroke: 1.5px black;
-	font-size:17px;
-	float:right;
-	margin:30px 20px 0 0 ;
-	}			
-
-
-	/*===================================*\		
+#pie {
+  width: 100%;
+  padding: 21px;
+  overflow: hidden;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: gold url("../images/imagenes/") no-repeat center center;
+  margin: 0 auto;
+}
+#pie p {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+#pie img {
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+#pie a,
+#pie a:link,
+#pie a:visited {
+  background-color: transparent;
+}
+#pie a:hover {
+  text-decoration: none;
+}
+#contenedor #pie #diseï¿½o {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 1.5px white;
+  font-size: 17px;
+  float: left;
+  margin: 30px 0 0 20px;
+}
+#contenedor #pie #copyright {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 1.5px black;
+  font-size: 17px;
+  float: right;
+  margin: 30px 20px 0 0;
+}
+/*===================================*\		
 			familia
 	\*===================================*/
-#clanes
-	{width:90%; margin:0 auto; /*border-style: double; border-width: 1px;*/
-		 border-style: radius; 
-  	 
-     /*display:flex;font-family:Arial, Helvetica, sans-serif*/; 
-	}
-.bode table{}
-.borde fieldset{/*border-style: double; border-width: 40px;*/
-/*width:1660%;
+#clanes {
+  width: 90%;
+  margin: 0 auto; /*border-style: double; border-width: 1px;*/
+  border-style: radius;
+  /*display:flex;font-family:Arial, Helvetica, sans-serif*/
+}
+.bode table {
+  background-color: transparent;
+}
+.borde fieldset {
+  /*border-style: double; border-width: 40px;*/
+  /*width:1660%;
 		background-color: ;/*recuadro clan total*/
-	/* -moz-border-radius: 15px;
+  /* -moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
 	border-width: 2px;
 	border-collapse: separate;
-    border-spacing: 5px;*/
-	}
-.botones{ display:flex; width:90%;  margin: 0 auto; background-color:; height: 92px;  
-
-
-		
-		/*line-height:95px;
-		
+	border-spacing: 5px;*/
+  background-color: transparent;
+}
+.botones {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 92px;
+  /*line-height:95px;
 		text-align:center;*/
-		 }
-.boton {  float:left; width:30%; margin:0 auto; /*background: url('../images/iconos/boton1.png') no-repeat   ;*/
-			background-size: 100%; 
-			
-			
-		/*para centrar padre*/		/*display: table-cell;
+}
+.boton {
+  float: left;
+  width: 30%;
+  margin: 0 auto; /*background: url('../images/iconos/boton1.png') no-repeat   ;*/
+  background-size: 100%;
+  /*para centrar padre*/ /*display: table-cell;
         vertical-align: middle;
-        text-align: center; /* requerido para alineación horizontal */}
-.boton button{  width:100%; margin:0 auto; background: url('../images/iconos/boton1.png') no-repeat   ;
-			background-size: 100%; height: 92px; border:0; background-color: ;}
-
-
-	
- /*&:hover{
+        text-align: center; /* requerido para alineaciï¿½n horizontal */
+}
+.boton button {
+  width: 100%;
+  margin: 0 auto;
+  background: url("../images/iconos/boton1.png") no-repeat;
+  background-size: 100%;
+  height: 92px;
+  border: 0;
+}
+/*&:hover{
         .boton{
             transform:scale(0.8);
             -ms-transform:scale(0.8); // IE 9 
@@ -447,311 +371,280 @@ body {
         .text{
             transform:translate(0px,-20px);
             opacity: 1;
-        
-        }*/
+                }*/
+.boton button:hover {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
+  filter: alpha(opacity = 70);
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  border: 0;
+  /*para ampliar aldea*/
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.exp {
+  overflow: inherit;
+  background: url("../images/iconos/exp.png") center center no-repeat;
+  background-size: 100%;
+}
+.exp img {
+  background-color: transparent;
+}
+.boton button h1 {
+  /*para centrar hijo*/
+  display: inline-block;
+  text-align: left; /*para centrar hijo*/
+  font-family: supercell;
 
-
-.boton button:hover 
-	{
-	opacity: 0.5;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
-	filter: alpha(opacity = 70);
-	transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-webkit-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	border:0;
-	/*para ampliar aldea*/
-	-webkit-transform:scale(1.2);
-	-moz-transform:scale(1.2);
-	-ms-transform:scale(1.2);
-	-o-transform:scale(1.2);
-	transform:scale(1.2);
-	}
-
-
-.exp{ overflow: inherit; background: url('../images/iconos/exp.png') center center no-repeat; background-size: 100%;}		
-.exp img{}	
-.boton button h1 
-				{/*para centrar hijo*/display: inline-block;
-        text-align: left;/*para centrar hijo*/
-         font-family: supercell;
-
-				-webkit-text-stroke: 1.5px black;
-				text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-			  color: #FFF;
-				width:;
-				
-				 /* color titulos dentro cajones centrales */
-				
-				color:orange;   /*color letras h3 */
-				font-size:20px;
-				
-				text-indent:10px;
-
-	}				
-		
-
-
-				
-			
-#clanes h2{/*font-family:Arial, Helvetica, sans-serif;
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  /* color titulos dentro cajones centrales */
+  color: orange; /*color letras h3 */
+  font-size: 20px;
+  text-indent: 10px;
+}
+#clanes h2 {
+  background-color: transparent;
+  /*font-family:Arial, Helvetica, sans-serif;
 				cursor:pointer;*/
-			}	
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-.copas img{ width: 15px; margin-bottom: -4px; }			
-			
-			
-/*.clan table {background-color:;}*/	
-  clanlevel-badge{
-        display: block;
-        background: url('<?php echo $data["badgeUrls"]["medium"]; ?>') no-repeat center center;
-    }
- 
- table.clantable { padding: 5px;  /*#aaa*/
-				
-	  border-style: double; border-width: 1px;/*borde negro exterior*/
-       
-
-       width:100%;
-      border-collapse: separate;
-      
-	  
-      -moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	 text-align:center;
-  	border-width: 2px; 
-  	background-color:#efeeea; 
-  	border-style: radius; 
-  	 
-  	 margin:0 auto;
-    
-	 -moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-
-
-	/*width:;
+}
+.copas img {
+  width: 15px;
+  margin-bottom: -4px;
+}
+/*.clan table {background-color:;}*/
+clanlevel-badge {
+  display: block;
+  background: url('<?php echo $data["badgeUrls"]["medium"]; ?>') no-repeat
+    center center;
+}
+table.clantable {
+  padding: 5px; /*#aaa*/
+  border-style: double;
+  border-width: 1px; /*borde negro exterior*/
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 15px;
+  text-align: center;
+  border-width: 2px;
+  background-color: #efeeea;
+  border-style: radius;
+  margin: 0 auto;
+  border-radius: 15px;
+  /*width:;
  	margin:0 auto; 
     border-collapse: separate;*/
-    border-spacing: 0px; /*entre las celdas*/
-
-
-
-
-    }
-    table.clantable tr td {
-      background-color: #aca998;/* #aaa recuadro clan total*/
-    }
-    table.clantable tr:first-child td:nth-child(3n+1) {
-      padding: 10px 20px;
-      vertical-align: top;
-    }
-	/*escudo*/
-    table.clantable tr:first-child td:first-child {
-      text-align: center;
-	   font-size:12px; /*letras del nivel*/
-	   width:30%;
-    }
-    /*descripcion*/
-	table.clantable tr:first-child td:last-child {
-      width:300px;  font-size: 15px; color: #fff;
-      font-size:10px /*1em*/;/*letras cajon central, no nombre del clan*/
-      font-weight: bold;
-      text-shadow: 1px 1px 0px #000;
-      padding-top: 5px;
-      
-    }
-    table.clantable tr:first-child td:nth-child(2) {/* letras del clan*/
-      color: #e3cfb5;
-      font-size: 10px/*2em*/;
-      font-weight: bold;
-      text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000 ;
-      padding-top: 5px;
-      white-space: nowrap;
-      text-align: left;
-      padding-right: 50px;/*separacion nombre y codigo*/
-      vertical-align: bottom;
-    }
-    table.clantable tr:first-child td:nth-child(3) {
-      color: #4c4c4c;
-      font-size: 10px/*1em*/;/*codigo clan*/
-      font-weight: bold;
-      padding-top: 5px;
-      white-space: nowrap;
-      text-align: right;
-      padding-left:/* 50px*/;/*separacion nombre y codigo*/
-      vertical-align: bottom;
-    }
-    /*centro, datos esta en dos partes; color letras centrales*/
-	table.clantable tr:nth-child(1n+2) td {width:15%;
-      border-bottom: solid #000 1px;
-      color: #fff;
-      font-size:10px /*1em*/;/*letras cajon central, no nombre del clan*/
-      font-weight: bold;
-      text-shadow: 1px 1px 0px #000;
-      padding-top: 5px;
-      white-space: nowrap;
-	  
-    }
-    table.clantable tr:nth-child(1n+2) td:first-child {
-      text-align: left;
-      padding-right: /*50px*/;
-    }
-    table.clantable tr:nth-child(1n+2) td:last-child {
-      text-align: right;
-      padding-left: /*50px*/;
-    }
-    table.clantable tr:first-child > td:first-child {
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-    }
-    table.clantable tr:first-child > td:last-child {
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
-    table.clantable .clanlevel {
-      color: #fff;
-      font-size: 10px/*1em*/;
-      font-weight: bold;
-      background-color: #000;
-      padding: 3px;
-    }
-
-   
-
-
-
-
-
-
-	/* miembros*/
-	
-.miembros{ padding: 5px;  /*#aaa*/
-				
-	  font-size:17px;
-       width:100%;
-      border-collapse: separate;
-      border-spacing: 1px; /* entre las celdas*/
-	  font-weight: bold;
-      text-shadow: 2px 2px 2px  #000;
-      -moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	 text-align:center;
-  	border-width: 2px; 
-  	background-color:#efeeea; 
-  	border-style: radius; 
-  	 height:50px; 
-  	 margin:0 auto;
-     background-color: ;/*recuadro clan total*/
-	 -moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-    }  
-	 
-    
-.miembros tr{background-color: #aca998 ;}
-.miembros img{width:100%;}
-.nombre{ text-align: left; }
-.miembros fieldset{ margin-bottom:  10px; }
-.miembros fieldset img{width:50px;  position: absolute; margin-top: -12px;}
-.cop fieldset {  background-color: #eacd89; -moz-border-radius: 10px; margin-top: 10px; 
-    -webkit-border-radius: 10px; border:2px solid white;}
-.dona{font-size:12px; color:black; text-shadow: 0px 0px 0px  gray; margin:5px;}
-.dona fieldset{ 
-
-	margin:5px;
-	height: 17px;
-	background-color: #efeeea;  
-	-webkit-border-radius: 10px; 
-	border:2px solid white;
-	}
-
-.miembros tr  {margin:0 auto;
+  border-spacing: 0px; /*entre las celdas*/
 }
-  
-      .miembros tr:first-child > td:first-child {
-     /* border-top-right-radius: 15px;
+table.clantable tr td {
+  background-color: #aca998; /* #aaa recuadro clan total*/
+}
+table.clantable tr:first-child td:nth-child(3n + 1) {
+  padding: 10px 20px;
+  vertical-align: top;
+}
+/*escudo*/
+table.clantable tr:first-child td:first-child {
+  text-align: center;
+  font-size: 12px; /*letras del nivel*/
+  width: 30%;
+}
+/*descripcion*/
+table.clantable tr:first-child td:last-child {
+  width: 300px;
+  font-size: 15px;
+  color: #fff;
+  font-size: 10px /*1em*/; /*letras cajon central, no nombre del clan*/
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #000;
+  padding-top: 5px;
+}
+table.clantable tr:first-child td:nth-child(2) {
+  /* letras del clan*/
+  color: #e3cfb5;
+  font-size: 10px /*2em*/;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000,
+    -1px -1px 0px #000;
+  padding-top: 5px;
+  white-space: nowrap;
+  text-align: left;
+  padding-right: 50px; /*separacion nombre y codigo*/
+  vertical-align: bottom;
+}
+table.clantable tr:first-child td:nth-child(3) {
+  color: #4c4c4c;
+  font-size: 10px /*1em*/; /*codigo clan*/
+  font-weight: bold;
+  padding-top: 5px;
+  white-space: nowrap;
+  text-align: right;
+  vertical-align: bottom;
+}
+/*centro, datos esta en dos partes; color letras centrales*/
+table.clantable tr:nth-child(1n + 2) td {
+  width: 15%;
+  border-bottom: solid #000 1px;
+  color: #fff;
+  font-size: 10px /*1em*/; /*letras cajon central, no nombre del clan*/
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #000;
+  padding-top: 5px;
+  white-space: nowrap;
+}
+table.clantable tr:nth-child(1n + 2) td:first-child {
+  text-align: left;
+}
+table.clantable tr:nth-child(1n + 2) td:last-child {
+  text-align: right;
+}
+table.clantable tr:first-child > td:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+table.clantable tr:first-child > td:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+table.clantable .clanlevel {
+  color: #fff;
+  font-size: 10px /*1em*/;
+  font-weight: bold;
+  background-color: #000;
+  padding: 3px;
+}
+/* miembros*/
+.miembros {
+  padding: 5px; /*#aaa*/
+  font-size: 17px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 1px; /* entre las celdas*/
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  border-width: 2px;
+  background-color: #efeeea;
+  border-style: radius;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.miembros tr {
+  background-color: #aca998;
+}
+.miembros img {
+  width: 100%;
+}
+.nombre {
+  text-align: left;
+}
+.miembros fieldset {
+  margin-bottom: 10px;
+}
+.miembros fieldset img {
+  width: 50px;
+  position: absolute;
+  margin-top: -12px;
+}
+.cop fieldset {
+  background-color: #eacd89;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.dona {
+  font-size: 12px;
+  color: black;
+  text-shadow: 0px 0px 0px gray;
+  margin: 5px;
+}
+.dona fieldset {
+  margin: 5px;
+  height: 17px;
+  background-color: #efeeea;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.miembros tr {
+  margin: 0 auto;
+}
+.miembros tr:first-child > td:first-child {
+  background-color: transparent;
+  /* border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
 	  border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;*/
-    }
-    .miembros tr:first-child > td:last-child {
-       /*border-top-right-radius: 15px;
+}
+.miembros tr:first-child > td:last-child {
+  background-color: transparent;
+  /*border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
 	  border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;*/
-    }
- 
-
-
-
-
-
-	/*===================================*\		
+}
+/*===================================*\		
 			guerra
 	\*===================================*/
-	
-	
-	#guerrae{
-	
-	margin:0 auto;
-	padding:20px;
-	background:gray url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed;
-	background-size: cover;
-	/*background:gray url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed; 
+#guerrae {
+  margin: 0 auto;
+  padding: 20px;
+  background: gray url("../images/imagenes/fondoguerra.gif") no-repeat top fixed;
+  background-size: cover;
+  /*background:gray url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed; 
 	background-size: cover;/*background-size: cover; si no va bienm en pantallas grandes quitar*/
-		text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000, -1px -1px 0px #000 ;
-			border-radius: 30px ; border: 2px solid;/* background:gray url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed; */
-			width:85%; 
-			margin-top:10px;
-	
-					
-			overflow:;/*hidden*/
-			  
-			}
-
-#guerra{width:100%;text-align: center;  background-color:; overflow:; margin:0 auto;
-	 /*height:0;*/ padding:3px; display: flex;  flex-direction: row; justify-content: space-between;/* flex-wrap: nowrap;  /*justify-content: center;/*flex-direction: row; justify-content: space-around;  */
-	 /* font-family:Arial, Helvetica, sans-serif; font-size:15px; color:black;*/
-		margin:0 auto;
-		background: url('../images/imagenes/') no-repeat  ;
-		
-	
-	background-color:;
-				overflow:hidden;/*hidden*/
-				 -webkit-transition: max-height 5000ms ease-out;
-   -moz-transition: max-height 5000ms ease-out;
-   -o-transition: max-height 5000ms ease-out;
-   transition: max-height 5000ms ease-out;		
+  text-shadow: 1px 1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000,
+    -1px -1px 0px #000;
+  border-radius: 30px;
+  border: 2px solid; /* background:gray url('../images/imagenes/fondoguerra.gif') no-repeat top  fixed; */
+  width: 85%;
+  margin-top: 10px;
 }
-.input{  margin-left: 140px; border-radius:10px;   font-family: supercell; font-size: 17pt; background-color: white; }
-
-
-.enviar{ margin-left: 140px; background: url('../images/iconos/boton1.png') no-repeat   ;
-		background-size: 100%; height: ; border:0; background-color: transparent;
-		width:100px;
-        height:35px;
-		/*  font-size:10px;
+#guerra {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  /*height:0;*/
+  padding: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* flex-wrap: nowrap;  /*justify-content: center;/*flex-direction: row; justify-content: space-around;  */
+  /* font-family:Arial, Helvetica, sans-serif; font-size:15px; color:black;*/
+  margin: 0 auto;
+  background: url("../images/imagenes/") no-repeat;
+  overflow: hidden; /*hidden*/
+  -webkit-transition: max-height 5000ms ease-out;
+  -moz-transition: max-height 5000ms ease-out;
+  -o-transition: max-height 5000ms ease-out;
+  transition: max-height 5000ms ease-out;
+}
+.input {
+  margin-left: 140px;
+  border-radius: 10px;
+  font-family: supercell;
+  font-size: 17pt;
+  background-color: white;
+}
+.enviar {
+  margin-left: 140px;
+  background: url("../images/iconos/boton1.png") no-repeat;
+  background-size: 100%;
+  border: 0;
+  background-color: transparent;
+  width: 100px;
+  height: 35px;
+  /*  font-size:10px;
         font-family:Verdana,Helvetica;
         font-weight:bold;
         color:white;
@@ -759,176 +652,199 @@ body {
         border:0px;
         width:80px;
         height:19px;*/
-		}
-.enviar:hover 
-	{
-	opacity: 0.5;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
-	filter: alpha(opacity = 70);
-	transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-webkit-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	border:0;
-	/*para ampliar aldea*/
-	-webkit-transform:scale(1.2);
-	-moz-transform:scale(1.2);
-	-ms-transform:scale(1.2);
-	-o-transform:scale(1.2);
-	transform:scale(1.2);
-	}
-#guerrae p{
-		text-align: center;
-		font-size: 22px;
-	 	color: red;
-		width:;
-		display:block;  
-		text-decoration:none;
-		animation-name: parpadeo;
- 		animation-duration: 1s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		-webkit-animation-name:parpadeo;
-		-webkit-animation-duration: 1s;
-		-webkit-animation-timing-function: linear;
-		-webkit-animation-iteration-count: infinite;
-		}
-
-#guerrae h1 
-	{			text-align: center;
-				margin: 0 auto;
-				font-size:32px;	
-				-webkit-text-stroke: 1.5px black;
-				text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-			  color: #FFF;
-				
-				color:orange;   /*color letras h3 */
-				
-				
-				text-indent:10px;						
-
-	}				
- .top table{margin:0 auto;
-	width:100%;
-     	}
- .top th{font-size:24px; margin:0 auto;
-	width:100%;
-     	}
-.top .tdn{text-align: right; width: 50%;}
-.top .tdt{text-align: left; width: 50%; }
-.top {
-	font-size:15px;
-	-webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
-	 text-shadow: 0.1em 0.1em brown;
-	background:transparent url('../images/imagenes/') center center no-repeat;
-	color:orange; 
-	padding:3px;
- 	margin:0 auto;   
-	text-indent:;
-	}
-
-#guerrae .wari {			
-	font-size:;
-	margin:0 auto;
-			color:white;
-			text-align:center;
-			border-radius: 30px ;/* border: 2px solid;*/
-			background: rgba(0, 0, 0, 0.5);
-			 
-			float:; 
-			clear :; 
-			background-color:;
-			width:95%;
-			text-shadow: 1px 1px 0px #fff,  ;
-				}
-#guerrae .logo{
-	-webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
-	 text-shadow: 0.1em 0.1em brown;
-	background:transparent url('../images/imagenes/') center center no-repeat;
-	color:orange; font-size:29px; padding:3px;
- 	margin:0 auto;
-	}
-#guerrae .logo img{
-	width:50%;
-	
-	}
-.wari img{width:25px; vertical-align: middle; margin-left:10px;	}
-
-.wari table{font-size:17px; width:100%; vertical-align: middle; }
-.marcador{margin:0px auto;}
-.titulo{ }			
-#guerra .warp { 
-	-webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
-	text-shadow: 0.1em 0.1em brown;
-	color:orange;
-	/*margin-left:0 auto;
-	margin-right:0 auto;*/
-	font-size:; 
-	width:50%;
-      
-} 
-
-#guerra .warp table {margin:0 auto; width:95%; font-size:17px;  }
-#guerra .warp img {width:100px; }
-#guerra .atacks0{ }
-#guerra .atacks{}
-#guerra .atacks img { margin-left: 15px; float:left; width:70px;  }
-#guerra .atacks2{ float:left; font-size:14px;  vertical-align: middle; /* overflow: auto;*/}
-#guerra .atacks2 img {  margin-bottom:-3px; width:60px;}
-#guerra .warp td { }
-
-
-		/*===================================*\
-				parpadeo
-		\*===================================*/
-
-#guerra #cambio 
-	{ width:;
-	display:block; font-size:15px; 
-	
-		text-decoration:none;
-		
-	 animation-name: parpadeo;
+}
+.enviar:hover {
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 70);
+  filter: alpha(opacity = 70);
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  border: 0;
+  /*para ampliar aldea*/
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+#guerrae p {
+  text-align: center;
+  font-size: 22px;
+  color: red;
+  display: block;
+  text-decoration: none;
+  animation-name: parpadeo;
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
-  -webkit-animation-name:parpadeo;
+  -webkit-animation-name: parpadeo;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
+}
+#guerrae h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 32px;
+  -webkit-text-stroke: 1.5px black;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  color: orange; /*color letras h3 */
+  text-indent: 10px;
+}
+.top table {
+  margin: 0 auto;
+  width: 100%;
+}
+.top th {
+  font-size: 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+.top .tdn {
+  text-align: right;
+  width: 50%;
+}
+.top .tdt {
+  text-align: left;
+  width: 50%;
+}
+.top {
+  font-size: 15px;
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.1em 0.1em brown;
+  background: transparent url("../images/imagenes/") center center no-repeat;
+  color: orange;
+  padding: 3px;
+  margin: 0 auto;
+}
+#guerrae .wari {
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  border-radius: 30px; /* border: 2px solid;*/
+  background: rgba(0, 0, 0, 0.5);
+  width: 95%;
+  text-shadow: 1px 1px 0px #fff;
+}
+#guerrae .logo {
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.1em 0.1em brown;
+  background: transparent url("../images/imagenes/") center center no-repeat;
+  color: orange;
+  font-size: 29px;
+  padding: 3px;
+  margin: 0 auto;
+}
+#guerrae .logo img {
+  width: 50%;
+}
+.wari img {
+  width: 25px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.wari table {
+  font-size: 17px;
+  width: 100%;
+  vertical-align: middle;
+}
+.marcador {
+  margin: 0px auto;
+}
+.titulo {
+  background-color: transparent;
+}
+#guerra .warp {
+  -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.1em 0.1em brown;
+  color: orange;
+  /*margin-left:0 auto;
+	margin-right:0 auto;*/
+  width: 50%;
+}
+#guerra .warp table {
+  margin: 0 auto;
+  width: 95%;
+  font-size: 17px;
+}
+#guerra .warp img {
+  width: 100px;
+}
+#guerra .atacks0 {
+  background-color: transparent;
+}
+#guerra .atacks {
+  background-color: transparent;
+}
+#guerra .atacks img {
+  margin-left: 15px;
+  float: left;
+  width: 70px;
+}
+#guerra .atacks2 {
+  float: left;
+  font-size: 14px;
+  vertical-align: middle; /* overflow: auto;*/
+}
+#guerra .atacks2 img {
+  margin-bottom: -3px;
+  width: 60px;
+}
+#guerra .warp td {
+  background-color: transparent;
+}
+/*===================================*\
+				parpadeo
+		\*===================================*/
+#guerra #cambio {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+@-moz-keyframes parpadeo {
+  0% {
+    opacity: 1;
   }
-  
-  @-moz-keyframes parpadeo{  
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-@-webkit-keyframes parpadeo {  
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-   100% { opacity: 1.0; }
+@-webkit-keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-@keyframes parpadeo {  
-  0% { opacity: 1.0; }
-   50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-
-
-
-
