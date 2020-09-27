@@ -182,7 +182,7 @@
 						<h>España</h>
 						<table border="0" bgcolor="#a0a0a0" cellspacing=0 cellpadding=3 class="clock24st" style="line-height:14px; margin: 0 auto; padding:0; border-radius: 10px; -webkit-border-radius: 10px; ">
 							<tr>
-								<td bgcolor="black" class="clock24std" style="font-family:; font-size:17px">
+								<td bgcolor="black" class="clock24std" style="font-size:17px">
 									<span class="clock24s" id="clock24_58764" style="color:gray; -webkit-text-stroke: 1.5px black; text-shadow: 0.1em 0.1em gray; color:white;  line-height:125%;">relojes pagina web</span>
 								</td>
 							</tr>
@@ -195,7 +195,7 @@
 						<h>USA</h>
 						<table border="0" bgcolor="#a0a0a0" cellspacing=0 cellpadding=3 class="clock24st" style="line-height:14px; margin: 0 auto; padding:0;">
 							<tr>
-								<td bgcolor="black" class="clock24std" style="font-family:; font-size:17px; ">
+								<td bgcolor="black" class="clock24std" style="font-size:17px; ">
 									<span class="clock24s" id="clock24_86371" style="color:gray; -webkit-text-stroke: 1.5px black; text-shadow: 0.1em 0.1em gray; color:white;  line-height:125%;">relojes pagina web</span>
 								</td>
 							</tr>
@@ -208,7 +208,7 @@
 						<h>Mexico</h>
 						<table border="0" bgcolor="#a0a0a0" cellspacing=0 cellpadding=3 class="clock24st" style="line-height:14px; margin: 0 auto; padding:0;">
 							<tr>
-								<td bgcolor="black" class="clock24std" style="font-family:; font-size:17px;">
+								<td bgcolor="black" class="clock24std" style="font-size:17px;">
 									<span class="clock24s" id="clock24_90267" style="color:gray; -webkit-text-stroke: 1.5px black; text-shadow: 0.1em 0.1em gray; color:white;  line-height:125%;">relojes pagina web</span>
 								</td>
 							</tr>
