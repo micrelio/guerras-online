@@ -89,13 +89,11 @@
 						}
 						?>
 					</div>
-
 					<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
 					<?php
 					if (!isset($error)) {
 						echo "<div id='guerrae'>
 					<div class='top'>";
-
 						$datot = (top());
 						$clanes = $datot['items'];
 						echo "<table >
@@ -113,7 +111,6 @@
 				</div>";
 					}
 					?>
-
 					<div id="guerrae">
 						<form action="clanes.php" method="get">
 							<label for="clan">
@@ -154,8 +151,8 @@
 													?><img src="<?php if (isset($dato["badgeUrls"]["medium"])) {
 																	echo $dato["badgeUrls"]["medium"];
 																} ?>" alt="<?php if (isset($dato["name"])) {
-																		echo $dato["name"];
-																	}  ?>" /></td>
+																				echo $dato["name"];
+																			}  ?>" /></td>
 								<td style="font-family: supercell;"><?php if (isset($dato["name"])) {
 																		echo  $dato["name"];
 																	} ?></td>

@@ -8,7 +8,6 @@
 	<link rel="icon" href="images/imagenes/.png" />
 	<meta name="author" content="micro" />
 	<meta name="copyright" content="micro" />
-
 	<!--<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">-->
 	<meta name="twitter:site" content="@Micrelio">
 	<link rel="alternate" hreflang="es" href="https://micrelio.esy.es/" />
@@ -19,17 +18,11 @@
 	<meta name="Distribution" content="Global" />
 	<meta name="googlebot" content="index, follow">
 	<meta name="robots" content="index,follow">
-
-
 	<meta property="og:url" content="https://micrelio.esy.es/">
 	<meta property="og:site_name" content="Guerras online | Clash of Clans">
 
-
-
 	<?php include('../funciones/funciones.php'); ?>
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
 	<script type="text/javascript" src="../funciones/funciones.js"></script>
 	<?php // include('funciones/funciones.php'); 
 	?>
@@ -49,13 +42,9 @@
 
 	<title><?php // echo $dato["name"]; 
 			?></title>
-
-
-
 </head>
 
 <body>
-
 	<div id="contenedor">
 		<div class="banner"> <img src="../images/imagenes/" alt="" />
 			<!--<nav>
@@ -73,14 +62,11 @@
 		</nav>-->
 		</div>
 		<!--banner-->
-
 		<!--<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div> -->
-
 		<div id="main2">
 			<div class="centro2" style="background-color:#e3cfb5;">
 				<!--font-family:Arial, Helvetica, sans-serif; font-size:25px;-->
 				<!--style="font-family:Arial, Helvetica, sans-serif; background-color: #aaa;"-->
-
 				<img src="../images/imagenes/topcentral.png" alt="" />
 				<!--pekes estado de guerra-->
 				<div>
@@ -103,7 +89,6 @@
 					}
 					?>
 				</div>
-
 				<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
 				<?php
 				if (!isset($error)) {
@@ -138,7 +123,6 @@
 				}
 				?>
 				<div id="guerrae">
-
 					<form action="guerras.php" method="get">
 						<label for="clan">
 							<h1>Escribe el codigo del clan</h1></br>
@@ -148,7 +132,6 @@
 						<input class="enviar" type="submit" value="buscar" />
 						<br />
 					</form>
-
 					<?php
 					if (!isset($_GET["clan"])) {
 						$datog = (guerras('#2Q2QVJC9'));
@@ -194,8 +177,6 @@
 					}
 					?>
 				</div>
-				
-
 				<div id="guerrae">
 					<div class="wari">
 						<!--style="font-family:Arial, Helvetica, sans-serif; font-size:17px;"-->
@@ -217,12 +198,6 @@
 								</td>
 							</tr>
 						</table>
-
-
-
-
-
-
 						<?php echo	"<table >";
 						if (isset($datog["state"])) {
 							$estadog = $datog["state"];
@@ -235,7 +210,6 @@
 									/*date_default_timezone_set('Europe/Amsterdam');*/
 									if (isset($datog["startTime"])) {
 										$fechai = $datog["startTime"];
-
 										$di = substr($fechai, 6, 2); //sacamos numeros para dia
 										$mi = substr($fechai, 4, 2); //sacamos numeros para mes
 										$yi = substr($fechai, 0, 4); //sacamos numeros para año
@@ -247,26 +221,20 @@
 										$inicio = $hie . "" . $ii/*."".$si*/;
 										$iniciou = $hiu . "" . $ii/*."".$si*/;
 										$iniciom = $him . "" . $ii/*."".$si*/;
-
-
 										$esp = "esp";
 										$usa = "usa";
 										$mex = "mex";
-
 										echo '<img src="../images/iconos/' . $esp . '.png" ; />';
 										$horae = DateTime::createFromFormat('Hi', $inicio);
 										echo $horae->format('H:i ');
-
 										echo '<img src="../images/iconos/' . $usa . '.png" ; />';
 										$horau = DateTime::createFromFormat('Hi', $iniciou);
 										echo $horau->format('H:i ');
-
 										echo '<img src="../images/iconos/' . $mex . '.png" ; />';
 										$horam = DateTime::createFromFormat('Hi', $iniciom);
 										echo $horam->format('H:i ');
 									} //del if 	
 									echo "</td>
-
 											</tr>
 											<tr>
 												<td>Participantes ";
@@ -297,20 +265,9 @@
 										$usa = "usa";
 										$mex = "mex";
 										//date("Y-m-d H:i:s ");
-
-
-
-
-
 										echo '<img src="../images/iconos/' . $esp . '.png"; />';
 										$horaef = DateTime::createFromFormat('Y-m-d H:i:s ', $final);
-
-
-
-
-
 										$fecha = date('Y-m-d H:i:s');
-
 										$date1   = new DateTime($final); //necesito este formatio para que valla
 										$date2 = new DateTime($fecha);
 										// echo '<pre>';
@@ -321,28 +278,17 @@
 										// echo '</pre>';
 										$dteDiff = $date2->diff($date1);
 										print $dteDiff->format(" %H:%I:%S");
-
-
-
-
-
-
 										//$fechax = $fecha1->diff($horaef);
-
-
 										//printf('%d años, %d meses, %d días, %d horas, %d minutos', $fecha->y, $fecha->m, $fecha->d, $fecha->h, $fecha->i);
 										// imprime: 2 años, 4 meses, 2 días, 1 horas, 17 minutos
-
 										//echo '<img src="../images/iconos/'.$usa.'.png" ; />';
 										//$horauf = DateTime::createFromFormat('Hi', $finalu);
 										//	echo $horauf->format('H:i ');
-
 										//echo '<img src="../images/iconos/'.$mex.'.png" ; />';
 										//$horamf = DateTime::createFromFormat('Hi', $finalm);
 										//	echo $horamf->format('H:i ');
 									} //del if  
 									echo "</td>
-
 											</tr>
 											<tr>
 												<td></br>Participantes ";
@@ -367,23 +313,9 @@
 						</table>
 					</div>
 					<!--wari--> <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<!-- participantes pekes-->
 					<div id="guerra">
 						<div class="warp">
-
 							<table>
 								<?php if (isset($estadog) && ($estadog == 'inWar')) {
 								?>
@@ -417,12 +349,6 @@
 									</tr>
 								<?php } ?>
 							</table>
-
-
-
-
-
-
 							<table cellpadding="0">
 								<?php
 								error_reporting(E_ERROR | E_PARSE); //poner solo los errores que quieres que muestre se puede sumar: E_ERROR | E_WARNING | E_PARSE | E_NOTICE
@@ -436,8 +362,6 @@
 								<?php
 								foreach ($mienbrospk as $mienbropk) {
 								?>
-
-
 									<tr colspan="2">
 										<td style="height:183px;  " colspan="2"><?php $star = "starwar";
 																				$star0 = "starwar0";
@@ -462,10 +386,6 @@
 																						default:
 																							echo  '<img src="../images/iconos/' . $star0 . '.png" ; />';
 																					}
-
-
-
-
 																					if (isset($mienbropk["bestOpponentAttack"]["destructionPercentage"])) {
 																						$porcentagek = $mienbropk["bestOpponentAttack"]["destructionPercentage"];
 																					}
@@ -475,9 +395,6 @@
 																				} else {
 																					echo  '<img src="../images/iconos/' . $star . '.png" ; />';
 																				}
-
-
-
 																				if (isset($mienbropk["mapPosition"])) {
 																					echo  "</br>" . $mienbropk["mapPosition"];
 																				} ?>.<?php if (isset($mienbropk["name"])) {
@@ -545,8 +462,6 @@
 											?>
 										</td>
 										<td>
-
-
 											<table class="atacks0" cellpadding="0" style=" width:105px; margin-left:-160px; margin-top:62px; position: relative;  ">
 												<?php
 												if (isset($mienbropk["attacks"])) {
@@ -587,7 +502,6 @@
 																if (isset($mienpk["stars"])) {
 																	$ataques = $mienpk["stars"];
 																}
-
 																$ata0 = "ata0";
 																$ata1 = "ata1";
 																$ata2 = "ata2";
@@ -625,14 +539,11 @@
 															}
 														}
 													}
-
 														?>
 														</td>
 													</tr>
 											</table>
 											<?php
-
-
 											?>
 										</td>
 									<?php 	} ?>
@@ -641,13 +552,8 @@
 							</table>
 						</div>
 						<!--warp-->
-
-
-
-
 						<!--enemigo-->
 						<div class="warp">
-
 							<table>
 								<?php if (isset($estadog) && ($estadog == 'inWar')) {
 								?>
@@ -681,12 +587,6 @@
 									</tr>
 								<?php } ?>
 							</table>
-
-
-
-
-
-
 							<table cellpadding="0">
 								<?php
 								error_reporting(E_ERROR | E_PARSE); //poner solo los errores que quieres que muestre se puede sumar: E_ERROR | E_WARNING | E_PARSE | E_NOTICE
@@ -700,8 +600,6 @@
 								<?php
 								foreach ($mienbrospk2 as $mienbropk2) {
 								?>
-
-
 									<tr colspan="2">
 										<td style="height:183px;  " colspan="2"><?php $star0 = "starwar0";
 																				$star1 = "starwar1";
@@ -793,11 +691,9 @@
 													echo '<img src="../images/th/' . $th12 . '.png" />';
 													break;
 											}
-
 											?>
 										</td>
 										<td>
-
 											<?php
 											?>
 											<table cellpadding="0" style=" width:105px; margin-left:-160px; margin-top:62px; position: relative; ">
@@ -882,8 +778,6 @@
 													</tr>
 											</table>
 											<?php
-
-
 											?></td>
 									<?php 	} ?>
 									</tr>
@@ -895,74 +789,25 @@
 					<!--guerra-->
 				</div><br>
 				<!--guerrae-->
-
-
-
-
-
-
-
-
-
 				<img src="../images/imagenes/bottomcentral.png" alt="" />
-
 			</div>
 			<!--centro2-->
-
 		</div>
 		<!--main2-->
-
-
-
-
-
-
-
 	</div>
-
-
-
 	<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
 	<!--contenedor-->
-
 	<div id="pie">
-
 		<div id="diseño">
-
 			<p>Gracias a <a href="https://www.youtube.com/channel/UCAfuTUdmRn0PLtN3uwtIRPA/videos"> kai cami coc </a> por la edicion de videos</p>
-
 			<p>Designed by Micro (microa4@gmail.com)</p>
-
 			<p>Copyright ® 2017 Primeros coc</p>
-
 		</div>
-
 		<div id="copyright">
-
 		</div>
-
 	</div>
-
-
-
 	</div>
-
 </body>
 
 </html>
