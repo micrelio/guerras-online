@@ -2,11 +2,12 @@
 <!-- Guerras online-->
 
 <?php
-
+$clan = "#8VVJCY9R";
 function clanes($clan)
 {
-	//$clantag = "#8VVJCY9R";
+	//$clan="#88G0PRVJ"
 	//echo $clan;
+	
 	$token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjM2NmJhZTg3LWIyNWItNGE4Zi05ZTRhLWJjODRiMzY3ZTUyNiIsImlhdCI6MTYwMTEzODc0MSwic3ViIjoiZGV2ZWxvcGVyLzc1YTAzMTdhLThkYWItMmQ2OC04Mzk1LWFiMmE2NTk5NmQyMyIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjIxMy4xNjIuMjAwLjIyNiJdLCJ0eXBlIjoiY2xpZW50In1dfQ.TYIG6bhiKtXet9GKH2Qq1oG0EPIbbmibUnOXeqw7Wbw4wgtYk446JfjdcxCsRyaYYHe_fFaSiHcaT0C6sLK3dg";
 	$url = "https://api.clashofclans.com/v1/clans/" . urlencode($clan);
 	$ch = curl_init($url);
@@ -24,7 +25,10 @@ function clanes($clan)
 		$errormsg = true;
 	}
 	return $dato;
-	print_r();
+	print_r($dato);
+	// echo '<pre>';
+	// print_r($dato);
+	// echo '</pre>';
 }
 
 ?>
@@ -39,6 +43,8 @@ function clanes($clan)
 // Replace with the token you get from the site, see more at http://jwt.io
 function guerras($clan)
 {
+	//$clan="#2Q2QVJC9";
+	//echo $clan;
 	if (isset($clan)) {
 		//echo $clan,"</br>";
 		$clanmod = substr($clan, 1, 20); //sacamos 2 2 numero para minutos
@@ -57,7 +63,7 @@ function guerras($clan)
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		$execute = curl_exec($ch);
 		//var_dump($execute);
-	
+
 		$res = curl_exec($ch);
 		$datog = json_decode($res, true);
 		curl_close($ch);
@@ -80,7 +86,6 @@ function guerras($clan)
 		// echo '</pre>'; 
 
 		return $datog;
-	
 	}
 } //isset clan
 //echo '<pre>';
@@ -149,7 +154,6 @@ curl_close($ch);
 
 if (isset($datocg["reason"])) {
 	$errormsg = true;
-	
 }
 //$mienbrose = $datocg["opponent"]["members"];
 //echo $datocg[""];

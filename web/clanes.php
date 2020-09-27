@@ -51,7 +51,7 @@ $(function() {
 <div id="contenedor"> 
 
 	
-	<div //class="banner">
+	<div class="banner">
 		<img src="../images/imagenes/" alt="" />
 	   <!--<nav>
             <ul>
@@ -124,23 +124,8 @@ $(function() {
 					}
 					?>
 				</div>
-
-
-
-
-
-
-
-
-
 				<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
-				<?php 
-				
-
-				
-			  
-					?>
-				<div id="clanes">
+						<div id="clanes">
 					<table class = "clantable">
 						<tr>
 							<td rowspan="11"><!--Nivel:--><?php $copas = "copas";//if (isset($dato["clanLevel"])){ echo $dato["clanLevel"];} ?><img src="<?php if (isset($dato["badgeUrls"]["medium"])){ echo $dato["badgeUrls"]["medium"];} ?>" alt="<?php if (isset($dato["name"])){ echo$dato["name"];}  ?>"/></td>

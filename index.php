@@ -38,6 +38,7 @@ $(function() {
 	});
 });
 </script>
+
 <?php 	
 	if(isset($_GET["bienvenida"])){ 
 			header("Location: index.php");
@@ -123,8 +124,8 @@ $(function() {
 				<div id="botonmenu" >
 					<div >
 					<form action="index.php" method="get" class="botones" >
-						<div class="boton"><button name="clanes" value="clanes"   type="submit"><p5>Clanes</p5></button></div>
-						<div class="boton"><button name="guerras" value="guerras"   type="submit"><p5>Guerras</p5></button></div>
+						<div class="boton"><button name="clanes" value="clanes"  type="submit"><p5>Clanes</p5></button></div>
+						<div class="boton"><button name="guerras" value="guerras"  type="submit"><p5>Guerras</p5></button></div>
 					</form>
 					
 				</div>
