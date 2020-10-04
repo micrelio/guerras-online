@@ -121,17 +121,17 @@
 					</form>
 					<?php
 					if (!isset($_GET["clan"])) {
-						$datog = (guerras('#2Q2QVJC9'));
+						$datog = (guerras('8VVJCY9R'));
 						echo "<p>Escribe el codigo del clan</p>";
-						echo "<h1 style='text-decoration:none;
-					animation-name: parpadeo;
-					 animation-duration: 1s;
-					animation-timing-function: linear;
-					animation-iteration-count: infinite;
-					-webkit-animation-name:parpadeo;
-					-webkit-animation-duration: 1s;
-					-webkit-animation-timing-function: linear;
-					-webkit-animation-iteration-count: infinite;'>" . $datog["clan"]["name"] . "</h1>";
+					// 	echo "<h1 style='text-decoration:none;
+					// animation-name: parpadeo;
+					//  animation-duration: 1s;
+					// animation-timing-function: linear;
+					// animation-iteration-count: infinite;
+					// -webkit-animation-name:parpadeo;
+					// -webkit-animation-duration: 1s;
+					// -webkit-animation-timing-function: linear;
+					// -webkit-animation-iteration-count: infinite;'>" . $datog["clan"]["name"] . "</h1>";
 					} else if (isset($_GET["clan"])) {
 						$clan = $_GET["clan"];
 						$datog = (guerras($clan));
@@ -143,25 +143,26 @@
 							case 'accessDenied':
 								echo "<p>Las estadisticas de guerra de este clan no son publicas</p>";
 								break;
-							default:
+							//default:
 								// switch ($errormsg) {
 								// case 'true':
-								//$error = $errormsg;
-								echo "<h1 style='text-decoration:none;
-											animation-name: parpadeo;
-									 		animation-duration: 1s;
-											animation-timing-function: linear;
-											animation-iteration-count: infinite;
-											-webkit-animation-name:parpadeo;
-											-webkit-animation-duration: 1s;
-											-webkit-animation-timing-function: linear;
-											-webkit-animation-iteration-count: infinite;'>" . $datog["clan"]["name"] . "</h1>";
+								// $error = $errormsg;
+								// echo "<h1 style='text-decoration:none;
+								// 			animation-name: parpadeo;
+								// 	 		animation-duration: 1s;
+								// 			animation-timing-function: linear;
+								// 			animation-iteration-count: infinite;
+								// 			-webkit-animation-name:parpadeo;
+								// 			-webkit-animation-duration: 1s;
+								// 			-webkit-animation-timing-function: linear;
+								// 			-webkit-animation-iteration-count: infinite;'>" . $datog["clan"]["name"] . "</h1>";
 								// break;
-								// default:
-								// break;
-								// }
+								default:
+								echo "<p>Este clan no tiene una guerra iniciada</p>";
+								break;
+								}
 						}
-					}
+					// }
 					?>
 				</div>
 				<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div>
@@ -297,11 +298,11 @@
 									echo "<tr><t style=' font-family: supercell; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size:25px; text-align:center; color:red;  animation-name: parpadeo; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;'>Guerra terminada</t></tr>";
 									break;
 								case "notInWar":
-									echo "<tr><t style=' font-family: supercell; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size:25px; text-align:center; color:red;  animation-name: parpadeo; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;'>Sin guerra</t></tr>";
+									echo "<tr><t style=' font-family: supercell; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size:25px; text-align:center; color:red;  animation-name: parpadeo; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;'>Guerra no iniciada</t></tr>";
 									break;
 									/*cambiar por buscar guerra*/
 								default;
-									echo "<tr><t style=' font-family: supercell; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size:25px; text-align:center; color:red;  animation-name: parpadeo; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;'>Sin guerra</t></tr>";
+									echo "<tr><t style=' font-family: supercell; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; font-size:25px; text-align:center; color:red;  animation-name: parpadeo; animation-duration: 1s; animation-timing-function: linear; animation-iteration-count: infinite;'>Guerra no iniciada</t></tr>";
 							} //switch
 						} //isset estadog2
 						?>

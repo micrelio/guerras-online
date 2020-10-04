@@ -1,7 +1,7 @@
 <!-- var_dump($datocg); para ver lo que devuelve un array -->
 <!-- Guerras online-->
 <?php
-$clan = "#8VVJCY9R";
+//$clan = "#8VVJCY9R";
 function clanes($clan)
 {
 	//$clan="#88G0PRVJ"
@@ -32,6 +32,7 @@ function clanes($clan)
 <!-- PRIMEROS GUERRA ACTUAL-->
 <?php
 // Replace with the token you get from the site, see more at http://jwt.io
+//$clan = "#2Q2QVJC9";
 function guerras($clan)
 {
 	//$clan="#2Q2QVJC9";
