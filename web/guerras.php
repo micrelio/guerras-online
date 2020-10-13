@@ -248,9 +248,9 @@
 										$df = substr($fechaf, 6, 2); //sacamos numeros para dia
 										$mf = substr($fechaf, 4, 2); //sacamos numeros para mes
 										$yf = substr($fechaf, 0, 4); //sacamos numeros para año
-										$hfe = substr($fechaf, 9, 2) + 1; //sacamos 2 numero para horas
-										$hfu = substr($fechaf, 9, 2) - 5; //sacamos 2 numero para horas
-										$hfm = substr($fechaf, 9, 2) - 6; //sacamos 2 numero para horas
+										$hfe = substr($fechaf, 9, 2); //no se porque va mal ajuste de hora + 1; //sacamos 2 numero para horas
+										$hfu = substr($fechaf, 9, 2); //no se porque va mal ajuste de hora - 5; //sacamos 2 numero para horas
+										$hfm = substr($fechaf, 9, 2); //no se porque va mal ajuste de hora - 6; //sacamos 2 numero para horas
 										$if = substr($fechaf, 11, 2); //sacamos 2 2 numero para minutos
 										$sf = substr($fechaf, 13, 2); //sacamos numero para segundos
 										$final = $yf . "" . $mf . "" . $df . " " . $hfe . "" . $if . "" . $sf;

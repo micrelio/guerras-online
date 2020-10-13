@@ -1,6 +1,7 @@
 <!-- var_dump($datocg); para ver lo que devuelve un array -->
 <!-- Guerras online-->
 <?php
+
 $clan = "#8VVJCY9R";
 function clanes($clan)
 {
