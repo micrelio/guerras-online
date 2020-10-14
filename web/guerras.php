@@ -208,9 +208,9 @@
 										$di = substr($fechai, 6, 2); //sacamos numeros para dia
 										$mi = substr($fechai, 4, 2); //sacamos numeros para mes
 										$yi = substr($fechai, 0, 4); //sacamos numeros para año
-										$hie = substr($fechai, 9, 2) + 1; //sacamos 2 numero para horas
-										$hiu = substr($fechai, 9, 2) + 19; //sacamos 2 numero para horas
-										$him = substr($fechai, 9, 2) + 18; //sacamos 2 numero para horas
+										$hie = substr($fechai, 9, 2); //no se porque va mal ajuste de hora + 1; //sacamos 2 numero para horas
+										$hiu = substr($fechai, 9, 2); //no se porque va mal ajuste de hora + 19; //sacamos 2 numero para horas
+										$him = substr($fechai, 9, 2); //no se porque va mal ajuste de hora+ 18; //sacamos 2 numero para horas
 										$ii = substr($fechai, 11, 2); //sacamos 2 2 numero para minutos
 										$si = substr($fechai, 13, 2); //sacamos numero para segundos
 										$inicio = $hie . "" . $ii/*."".$si*/;
