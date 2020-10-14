@@ -273,15 +273,15 @@
 										// echo '</pre>';
 										$dteDiff = $date2->diff($date1);
 										print $dteDiff->format(" %H:%I:%S");
-										//$fechax = $fecha1->diff($horaef);
-										//printf('%d años, %d meses, %d días, %d horas, %d minutos', $fecha->y, $fecha->m, $fecha->d, $fecha->h, $fecha->i);
-										// imprime: 2 años, 4 meses, 2 días, 1 horas, 17 minutos
-										//echo '<img src="../images/iconos/'.$usa.'.png" ; />';
-										//$horauf = DateTime::createFromFormat('Hi', $finalu);
-										//	echo $horauf->format('H:i ');
-										//echo '<img src="../images/iconos/'.$mex.'.png" ; />';
-										//$horamf = DateTime::createFromFormat('Hi', $finalm);
-										//	echo $horamf->format('H:i ');
+										$fechax = $fecha1->diff($horaef);
+										printf('%d años, %d meses, %d días, %d horas, %d minutos', $fecha->y, $fecha->m, $fecha->d, $fecha->h, $fecha->i);
+										//imprime: 2 años, 4 meses, 2 días, 1 horas, 17 minutos
+										echo '<img src="../images/iconos/'.$usa.'.png" ; />';
+										$horauf = DateTime::createFromFormat('Hi', $finalu);
+											echo $horauf->format('H:i ');
+										echo '<img src="../images/iconos/'.$mex.'.png" ; />';
+										$horamf = DateTime::createFromFormat('Hi', $finalm);
+											echo $horamf->format('H:i ');
 									} //del if  
 									echo "</td>
 											</tr>
