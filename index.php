@@ -10,7 +10,7 @@
 	<meta name="copyright" content="micro" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
 	<meta name="twitter:site" content="@Micrelio">
-	<link rel="alternate" hreflang="es" href="https://micrelio.esy.es/" />
+	<link rel="alternate" hreflang="es" href="https://clashofclansguerrasonline.titaniumgamers.com/" />
 	<meta name="Title" content="Guerras oline Clash of clans" />
 	<meta name="Description" content="clash of clans,  aqui puedes ver las guerras en directo del clan que quieras del juego clash of clans de supercell." />
 	<meta name="Keywords" content="clash of clans,  guerras, supercell, online." />
@@ -18,7 +18,7 @@
 	<meta name="Distribution" content="Global" />
 	<meta name="googlebot" content="index, follow">
 	<meta name="robots" content="index,follow">
-	<meta property="og:url" content="https://micrelio.esy.es/">
+	<meta property="og:url" content="https://clashofclansguerrasonline.titaniumgamers.com/">
 	<meta property="og:site_name" content="Guerras online | Clash of Clans">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript" src='funciones/funciones.js'></script>
