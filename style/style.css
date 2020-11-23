@@ -283,7 +283,7 @@ nav .active {
 }
 /*===================================*\
 					laterales
-     \*===================================*/
+\*===================================*/
 #left .inner {
   border-width: 2px;
   border-style: solid;
@@ -353,7 +353,6 @@ nav .active {
   width: 45%;
   background-color: black;
 }
-
 #imge {
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 100);
@@ -534,14 +533,14 @@ nav .active {
   /* padding: 1rem; */
   /* background-color: blue; */
 }
- #pie .politicas p {
-    margin: 0rem 1rem 0rem 1rem;
-    font-size: 0.7rem;
-    cursor: pointer;
-  }
-  .politicas a {
-    text-decoration: none;
-  }
+#pie .politicas p {
+  margin: 0rem 1rem 0rem 1rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.politicas a {
+  text-decoration: none;
+}
 /*===================================*\
 			ajustes a pantallas
 	\*===================================*/
