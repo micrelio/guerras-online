@@ -263,6 +263,17 @@
 		</div>
 		<div id="copyright">
 		</div>
+		<div class="politicas" id="politicas">
+			<a href="html/politicaDePrivacidad.html" target=”_blank”>
+				<p class="privacidad" id="privacidad"> Política de privacidad</p>
+			</a>
+			<a href="html/avisoLegal.html" target=”_blank”>
+				<p class="privacidad" id="aviso"> Aviso Legal</p>
+			</a>
+			<a href="html/politicaDeCookies.html" target=”_blank”>
+				<p class="privacidad" id="cookies"> Política de Cookies</p>
+			</a>
+		</div>
 	</div>
 </body>
 

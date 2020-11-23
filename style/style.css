@@ -523,6 +523,25 @@ nav .active {
   float: right;
   margin: 30px 20px 0 0;
 }
+.politicas {
+  bottom: 0px;
+  margin: 1rem 0rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: red;
+  /* padding: 1rem; */
+  /* background-color: blue; */
+}
+ #pie .politicas p {
+    margin: 0rem 1rem 0rem 1rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+  .politicas a {
+    text-decoration: none;
+  }
 /*===================================*\
 			ajustes a pantallas
 	\*===================================*/
