@@ -401,7 +401,6 @@ body {
   display: inline-block;
   text-align: left; /*para centrar hijo*/
   font-family: supercell;
-
   -webkit-text-stroke: 1.5px black;
   text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
     0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
@@ -492,7 +491,6 @@ table.clantable tr:first-child td:nth-child(3) {
   text-align: right;
   vertical-align: bottom;
 }
-
 /*centro, datos esta en dos partes; color letras centrales*/
 table.clantable tr:nth-child(1n + 2) td {
   width: 15%;
@@ -595,7 +593,6 @@ table.clantable .clanlevel {
 	  border-top-left-radius: 15px;
       border-bottom-left-radius: 15px;*/
 }
-
 /*===================================*\		
 			guerra
 	\*===================================*/
@@ -801,7 +798,6 @@ table.clantable .clanlevel {
 #guerra .warp td {
   background-color: transparent;
 }
-
 /*===================================*\
 				parpadeo
 /*===================================*/
