@@ -45,19 +45,6 @@
 <body>
 	<div id="contenedor">
 		<div class="banner"> <img src="../images/imagenes/" alt="" />
-			<!--<nav>
-			 <ul>
-				<li><a href="../../index.php" >Bienvenida</a></li>
- 				<li><a href="coliders.html" >Coliders</a></li>
-				<li><a href="veteranos.html" >Veteranos</a></li>
-				<li><a href="videos.html" >Videos</a></li>
-		        <li><a href="clanes.php">Clanes</a></li>
-                <li><a href="guerras.php" class="active">Guerras</a></li>
-				<li><a href="aldeas.html" > Aldeas<center >	</a></li>
-				<br clear="all" />
-			</ul>
-			<a id="pull" href="#">Menu</a>
-		</nav>-->
 		</div>
 		<!--banner-->
 		<!--<div style="clear: both; height: 10px; overflow: hidden">&nbsp;</div> -->

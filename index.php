@@ -55,19 +55,6 @@
 	<div id="contenedor">
 		<div class="banner">
 			<img src="images/imagenes/" alt="" />
-			<!--   <nav>
-            <ul>
-                <li><a href="index.php" class="active">Bienvenida</a></li>
-		        <li><a href="web/coliders.html">Coliders</a></li>
-		        <li><a href="web/veteranos.html">Veteranos</a></li>
-		        <li><a href="web/videos.html" >Videos</a></li>
-				<li><a href="web/clanes.php">Clanes</a></li>
-                <li><a href="web/guerras.php">Guerras</a></li>
-				<li><a href="web/aldeas.html">Aldeas</a></li>
-				<br clear="all" />
-           </ul>
-           <a id="pull" href="#">Menu</a>
-        </nav>-->
 		</div>
 		<!--banner-->
 		<div class="contenido">
@@ -143,14 +130,6 @@
 						<p>Bienvenidos a guerras online.</p>
 						<p>En esta web puedes seguir las <a href="web/guerras.php">Guerras.</a> en directo de todos los clanes que lo tengan disponible, tambien puedes ver los datos de cualquier clan del juego de supercell clash of clans</p>
 						<h></h>
-						<!--<ul>
-						<li><p1></p1></li>
-						<li><p1></p1></li>
-						<li><p1></p1></li>
-						<li><p1></p1></li>
-						<li><p1><a href="web/guerras.php">Guerras.</a> <a href="web/guerras.php">Guerra</a></p1></li>
-						<br>
-					</ul>-->
 					</div>
 					<img src="images/imagenes/bottomlaterales.png" alt="" />
 				</div>
